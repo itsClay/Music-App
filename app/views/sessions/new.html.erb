@@ -1,0 +1,18 @@
+
+
+<a class="button" href=""></a>
+
+<form class="" action="<%= session_url %>" method="post">
+  <%= auth_token %>
+
+  <p>
+    <label for="new-user-email">Email:</label>
+    <input type="text" name="user[email]" value=" ">
+  </p>
+  <p>
+    <label for="new-user-password">Password:</label>
+    <input type="password" name="user[password]" value="">
+  </p>
+
+  <input type="submit">
+</form>
