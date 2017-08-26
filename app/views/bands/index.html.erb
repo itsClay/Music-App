@@ -1,0 +1,9 @@
+<h3>Bands Index</h3>
+<%= auth_token %>
+
+<% @bands.each do |band| %>
+  <p><%= band.name %></p>
+  <%= button_to "Edit", edit_band_url(band.id), method: :get %>
+<% end %>
+
+<%= link_to "Add a band", new_band_url %>
